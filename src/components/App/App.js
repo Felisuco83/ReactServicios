@@ -1,6 +1,9 @@
 import logo from "./../../logo.svg";
 import "./App.css";
 import Customers from "./../Customers";
+import BuscarCustomers from "./../BuscarCustomers";
+import CochesPaco from "./../CochesPaco";
+import Departamentos from "./../EmpleadosDepartamentos/Departamentos";
 
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Customers />
+      {/* <Customers /> */}
+      {/* <BuscarCustomers /> */}
+      {/* <CochesPaco /> */}
+      <Departamentos />
     </div>
   );
 }
