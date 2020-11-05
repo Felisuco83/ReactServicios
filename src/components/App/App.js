@@ -3,7 +3,15 @@ import "./App.css";
 import Customers from "./../Customers";
 import BuscarCustomers from "./../BuscarCustomers";
 import CochesPaco from "./../CochesPaco";
-import Departamentos from "./../EmpleadosDepartamentos/Departamentos";
+// import Departamentos from "./../EmpleadosDepartamentos/Departamentos";
+import Router from "./../Router";
+import EmpleadosRouter from "./../RutasEmpleados/EmpleadosRouter";
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import Popper from "popper.js";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Departamentos from "./../Crud/Departamentos";
+import MenuDepartamentos from "../Crud/MenuDepartamentos";
 
 function App() {
   return (
@@ -25,7 +33,12 @@ function App() {
       {/* <Customers /> */}
       {/* <BuscarCustomers /> */}
       {/* <CochesPaco /> */}
-      <Departamentos />
+      {/* <Departamentos /> */}
+      {/* <EmpleadosRouter />
+      <hr />
+      <Router /> */}
+      <MenuDepartamentos />
+      <Router />
     </div>
   );
 }

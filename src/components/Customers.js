@@ -16,7 +16,7 @@ export default class Customers extends Component {
       });
     });
   };
-  componentWillMount = () => {
+  componentDidMount = () => {
     this.cargarClientes();
   };
   render() {

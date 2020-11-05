@@ -7,7 +7,7 @@ export default class Empleados extends Component {
     empleados: [],
     status: false,
   };
-  componentWillReceiveProps = () => {
+  componentDidUpdate = () => {
     var url =
       Global.urlempleados +
       "api/Empleados/EmpleadosDepartamento/" +
