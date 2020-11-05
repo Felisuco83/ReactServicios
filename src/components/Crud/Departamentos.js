@@ -39,6 +39,9 @@ export default class Departamentos extends Component {
                     <td>{dpto.numero}</td>
                     <td>{dpto.nombre}</td>
                     <td>{dpto.localidad}</td>
+                    <td>
+                      <a href={"/details/" + dpto.numero}>Detalles</a>
+                    </td>
                   </tr>
                 );
               })}
