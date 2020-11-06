@@ -37,7 +37,6 @@ function App() {
       {/* <EmpleadosRouter />
       <hr />
       <Router /> */}
-      <MenuDepartamentos />
       <Router />
     </div>
   );

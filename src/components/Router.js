@@ -5,11 +5,14 @@ import Departamentos from "./Crud/Departamentos";
 import InsertarDepartamento from "./Crud/InsertarDepartamento";
 import DetallesDepartamento from "./Crud/DetallesDepartamento";
 import UpdateDepartamento from "./Crud/UpdateDepartamento";
+import DeleteDepartamento from "./Crud/DeleteDepartamento";
+import MenuDepartamentos from "./Crud/MenuDepartamentos";
 
 export default class Router extends Component {
   render() {
     return (
       <BrowserRouter>
+        <MenuDepartamentos />
         <Switch>
           <Route
             exact
@@ -45,6 +48,14 @@ export default class Router extends Component {
                   localidad={loc}
                 />
               );
+            }}
+          />
+          <Route
+            exact
+            path="/delete/:id"
+            render={(props) => {
+              var id = props.match.params.id;
+              return <DeleteDepartamento iddepartamento={id} />;
             }}
           />
         </Switch>
